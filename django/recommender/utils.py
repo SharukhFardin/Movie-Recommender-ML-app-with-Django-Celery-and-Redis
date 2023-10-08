@@ -15,5 +15,7 @@ def get_fake_profiles(count=10):
         }
         if "name" in profile:
             fname, lname = profile.get("name").split(" ")[:2]
+            data["first_name"] = fname
+            data["last_name"] = lname
         user_data.append(data)
     return user_data
