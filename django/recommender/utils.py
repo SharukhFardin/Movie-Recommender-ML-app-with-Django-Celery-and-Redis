@@ -1,4 +1,10 @@
+import csv
+
+from django.conf import settings
+
 from faker import Faker
+
+# DATA_DIR = seetiin
 
 
 def get_fake_profiles(count=10):
