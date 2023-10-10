@@ -6,7 +6,7 @@ def get_fake_profiles(count=10):
     fake = Faker()
     user_data = []
 
-    for _ in range(10):
+    for _ in range(count):
         profile = fake.profile()
         data = {
             "username": profile.get("username"),
